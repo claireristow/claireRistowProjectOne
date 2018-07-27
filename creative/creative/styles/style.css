@@ -1,0 +1,285 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.homeHero {
+    background: url(../assets/home-1.jpeg);
+    min-height: 102rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.blogHero {
+    background: url(../assets/blog-1.jpeg);
+    min-height: 90rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.contactHero {
+    background: url(../assets/contact-1.jpeg);
+}
+
+nav li {
+    float:left;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.leftNav, h1 {
+    float: left;
+}
+
+.rightNav {
+    float: right;
+}
+
+.leftNav a {
+    padding-right: 2.5rem;
+}
+
+.rightNav a {
+    padding-left: 2.5rem;
+}
+
+.branding {
+    background-color: #c3dab7;
+    height: 80vh;
+}
+
+.branding img:first-child {
+    position: absolute;
+    top: 10%;
+    left: 27%;
+    z-index: 10;
+}
+
+.brandingVisual img:nth-child(2) {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 20rem auto 0 auto;
+    display: block;
+}
+
+.brandingVisual {
+    float: left;
+    width: 100%;
+}
+
+.branding figure {
+    float: left;
+    width: 20%;
+}
+
+/* spotlight section */
+
+.spotlight i, img {
+    float: left;
+}
+
+.spotlight i{
+    transform: translateY(800%);    
+}
+
+.spotlight img {
+    border-radius: 50%;
+}
+
+.spotlight p {
+    clear: both;
+    text-align: center;
+    width: 70%;
+    font-style: italic;
+    line-height: 3rem;
+}
+
+/* Product Feature section */
+
+.productFeatures {
+    background: url(../assets/home-4.jpeg);
+    background-size: cover;
+    height: 50rem;
+}
+
+.productFeatures ul {
+    float: right;
+    width: 50%;
+    list-style-type: none;
+    margin-right: 10rem;
+}
+
+.productFeatures li {
+    float: left;
+    width: calc(50% - 8rem);
+    margin: 2rem 4rem;
+}
+
+.productFeatures h5 {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.productFeatures p {
+    font-size: 1.3rem;
+    line-height: 2.35rem;
+    color: #999999;    
+    
+}
+
+.productFeatures h5::before {
+    font-family: "Font Awesome 5 Free";
+    border: 0.2rem solid black;
+    padding: 1rem;
+    border-radius: 50%;
+    font-weight: 900;
+    position: absolute;
+    top: 0.2rem;
+    left: -7rem;
+}
+
+.productFeatures h5:nth-child(1)::before {
+    content: "\f0d0";
+}
+
+.productFeatures h5:nth-child(2)::before {
+    content: "\f002";
+}
+
+.productFeatures h5:nth-child(3)::before {
+    content: "\f108";
+}
+
+.productFeatures h5:nth-child(4)::before {
+    content: "\f290";
+}
+
+.productFeatures h5:nth-child(5)::before {
+    content: "\f1de";
+}
+
+.productFeatures h5:nth-child(6)::before {
+    content: "\f118";
+}
+
+/* Team section */
+
+.team h4 {
+    text-align: center;
+}
+
+.team .description {
+    background: #f6f6f6;
+    width: 56rem;
+    float:left;
+    height: 27rem;
+    padding: 5rem;
+    margin: 1rem;
+}
+
+.team .description p:first-child {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.team .description p:last-child {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-top: 2rem;
+}
+
+.team img {
+    margin: 1rem;
+}
+
+.hire {
+    background: #f6f6f6;
+    height: 27rem;
+    width: 27rem;
+    float: left;
+    margin: 1rem;
+    padding: 8rem 2rem 5rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
