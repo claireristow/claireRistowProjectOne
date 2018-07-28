@@ -119,6 +119,8 @@ a {
     padding-left: 2.5rem;
 }
 
+/* Branding section */
+
 .branding {
     background-color: #c3dab7;
     height: 80vh;
@@ -152,24 +154,56 @@ a {
 
 /* spotlight section */
 
-.spotlight i, img {
+.spotlight {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+/* .spotlight i, img {
     float: left;
 }
 
 .spotlight i{
     transform: translateY(800%);    
-}
+} */
 
 .spotlight img {
     border-radius: 50%;
+    display: block;
+    object-position: center;
+    position: relative;
+    top: 10%;
+    left: 35%;
+
+}
+
+.spotlight img::before {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+}
+
+.spotlight img::before {
+    content: "\f053";
+}
+
+.spolight img::after {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+}
+
+.spotlight img::after {
+    content: "\f054";
 }
 
 .spotlight p {
     clear: both;
     text-align: center;
-    width: 70%;
     font-style: italic;
     line-height: 3rem;
+    padding-top: 3rem;
 }
 
 /* Product Feature section */
@@ -293,10 +327,9 @@ a {
 
 .contact .left {
     background: #c3dab7;
-    height: 92.5rem;
     text-align: center;
 }
 
 .left p {
-    margin: 0 10rem;
+    /* margin: 0 10rem; */
 }
