@@ -216,27 +216,27 @@ a {
     left: -7rem;
 }
 
-.productFeatures h5:nth-child(1)::before {
+.productFeatures li:nth-child(1) h5::before {
     content: "\f0d0";
 }
 
-.productFeatures h5:nth-child(2)::before {
+.productFeatures li:nth-child(2) h5::before {
     content: "\f002";
 }
 
-.productFeatures h5:nth-child(3)::before {
+.productFeatures li:nth-child(3) h5::before {
     content: "\f108";
 }
 
-.productFeatures h5:nth-child(4)::before {
+.productFeatures li:nth-child(4) h5::before {
     content: "\f290";
 }
 
-.productFeatures h5:nth-child(5)::before {
+.productFeatures li:nth-child(5) h5::before {
     content: "\f1de";
 }
 
-.productFeatures h5:nth-child(6)::before {
+.productFeatures li:nth-child(6) h5::before {
     content: "\f118";
 }
 
@@ -282,4 +282,21 @@ a {
     text-align: center;
     letter-spacing: 0.5rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Contact section */
+
+.contact .left, .contact img {
+    float: left;
+    width: 50%;
+}
+
+.contact .left {
+    background: #c3dab7;
+    height: 92.5rem;
+    text-align: center;
+}
+
+.left p {
+    margin: 0 10rem;
 }
