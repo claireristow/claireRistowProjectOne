@@ -619,6 +619,23 @@ main {
     padding-bottom: 0.5rem;
 }
 
+/* comment section */
+
+.leaveComment input, .leaveComment button {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.leaveComment input {
+    font-size: 1.4rem;
+}
+
+.leaveComment button {
+    background: #fff;
+}
+
 /* Start of contact.html styles */
 
 .contactHero {
