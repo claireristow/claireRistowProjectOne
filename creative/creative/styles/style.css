@@ -93,6 +93,10 @@ a {
     font-size: 1.4rem;
 }
 
+nav li:hover {
+    text-decoration: line-through;
+}
+
 .leftNav, h1 {
     float: left;
 }
@@ -107,6 +111,15 @@ a {
 
 .rightNav a {
     padding-left: 2.5rem;
+}
+
+.fa-shopping-bag::after {
+    content: "2";
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: #c3dab7;
+    border-radius: 50%;
 }
 
 /* blog.html and contact.html form */
@@ -142,8 +155,16 @@ input[type="submit"] {
     font-weight: 700;
     text-transform: uppercase;
     margin: 3rem 0 10rem 0;
+    padding: 1rem;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
     border-bottom: 1px solid #000;
     color: #000;
+}
+
+input[type='submit']:hover {
+    border: 1px solid #000;
 }
 
 input:hover {
@@ -157,6 +178,7 @@ input:hover::placeholder {
 /* Footer */
 
 footer {
+    clear: both;
     background: #333333;
     color: rgba(255,255,255,0.8);
 }
@@ -182,6 +204,10 @@ footer {
     padding-right: 2rem;
 }
 
+.contactUs .social i:hover {
+    color: #666;
+}
+
 .recentPosts h5 {
     text-align: center;
 }
@@ -205,22 +231,25 @@ footer {
     padding-bottom: 2rem;
 }
 
+.emailSubscribe {
+    float: right;
+}
+
 .subscribeNow input[type="email"] {
+    float: left;
     background: #fff;
     color: #333;
     padding: 1rem 2rem;
     border: none;
     margin: 0;
-    display: inline-block;
 }
 
-.subscribeNow i {
+.subscribeNow button {
+    float: left;
     background: #c3dab7;
-    color: #333;
-    font-size: 1.8rem;
-    padding: 1.27rem 1.4rem;
+    padding: 0.89rem 1.5rem;
+    border: none;
     margin: 0;
-    display: inline-block;
 }
 
 footer p {
@@ -309,42 +338,37 @@ footer p {
     padding: 5rem 0;
 }
 
-/* .spotlight i, img {
-    float: left;
-}
-
-.spotlight i{
-    transform: translateY(800%);    
-} */
-
-.spotlight img {
-    border-radius: 50%;
-    display: block;
+.spotlightImage {
+    display: inline;
     object-position: center;
     position: relative;
     top: 10%;
     left: 35%;
-
 }
 
-.spotlight img::before {
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    font-weight: 900;
+.spotlightImage img {
+    border-radius: 50%;
 }
 
-.spotlight img::before {
+.spotlightImage::before {
     content: "\f053";
-}
-
-.spolight img::after {
     font-family: "Font Awesome 5 Free";
     position: absolute;
     font-weight: 900;
+    font-size: 3rem;
+    top: -600%;
+    left: -110%;
 }
 
-.spotlight img::after {
+.spotlightImage::after {
     content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #999;
+    top: -600%;
+    right: -110%;
 }
 
 .spotlight p {
@@ -368,6 +392,7 @@ footer p {
     width: 50%;
     list-style-type: none;
     margin-right: 10rem;
+    padding-top: 2rem;
 }
 
 .productFeatures li {
@@ -465,10 +490,10 @@ footer p {
     width: 27rem;
     float: left;
     margin: 1rem;
-    padding: 8rem 2rem 5rem 2rem;
+    padding: 10rem 2rem 0 2rem;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -477,11 +502,11 @@ footer p {
 .contactContainer {
     background: #c3dab7;
     text-align: center;
-    height: 60rem;
+    /* height: 60rem; */
 }
 
 .contactContainer h4 {
-    padding: 10rem 0 2rem 0;
+    padding: 15rem 0 2rem 0;
 }
 
 .contactContainer p {
@@ -503,15 +528,18 @@ footer p {
     margin-top: 5rem;
 }
 
+.contactContainer button:hover {
+    border: 1px solid #000;
+}
+
 .contact .left, .contact .imageContainer {
     float: left;
     width: 50%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .imageContainer img {
-    max-width: 100%;
-    object-fit: contain;
+    display: block;
 }
 
 /* Start of blog.html styles */
@@ -664,7 +692,7 @@ main {
     padding-bottom: 0.5rem;
 }
 
-/* comment section */
+/* blog.html comment section */
 
 
 
@@ -700,7 +728,7 @@ main {
     top: -150%;
 }
 
-/* contactDetails Section */
+/* contact.html contact details Section */
 
 .contactDetails {
     margin: 8rem 0;
@@ -749,7 +777,7 @@ main {
     color: #000;
 }
 
-/* getInTouch section */
+/* contact.html get in touch section */
 
 .getInTouch {
     clear:both;
@@ -760,7 +788,7 @@ main {
     margin-bottom: 10rem;
 }
 
-/* image section */
+/* contact.html image section */
 
 .image img {
     display: block;
