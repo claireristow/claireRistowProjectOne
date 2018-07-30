@@ -109,6 +109,51 @@ a {
     padding-left: 2.5rem;
 }
 
+/* blog.html and contact.html form */
+
+input {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    background: #fff;
+}
+
+input[id="name"], input[id="email"], input[id="subject"] {
+    width: calc(33% - 1.2rem);
+}
+
+input[id='name'] {
+    margin-right: 2rem
+}
+
+input[id='subject'] {
+    margin-left: 2rem;
+}
+
+input[id="comment"] {
+    width: 100%;
+    padding-bottom: 15rem;
+}
+
+input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0 10rem 0;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+input:hover {
+    border-bottom: 1px solid #000;
+}
+
+input:hover::placeholder {
+    color: #000;
+    opacity: 1;
+}
 /* Footer */
 
 footer {
@@ -160,7 +205,7 @@ footer {
     padding-bottom: 2rem;
 }
 
-input[type="email"] {
+.subscribeNow input[type="email"] {
     background: #fff;
     color: #333;
     padding: 1rem 2rem;
@@ -621,23 +666,102 @@ main {
 
 /* comment section */
 
-.leaveComment input, .leaveComment button {
-    border: none;
-    border-bottom: 1px solid #999;
-    padding-bottom: 0.5rem;
-    margin-bottom: 3rem;
-}
 
-.leaveComment input {
-    font-size: 1.4rem;
-}
-
-.leaveComment button {
-    background: #fff;
-}
 
 /* Start of contact.html styles */
 
 .contactHero {
-    background: url(../assets/contact-1.jpeg);
+    background: #fff;
+    padding-bottom: 7rem;
+}
+
+.mainContact {
+    position: relative;
+}
+
+.mainContact h5 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.contactTitle img {
+    position: relative;
+}
+
+.contactTitle h2 {
+    position: absolute;
+}
+
+.contactTitle h2:first-child {
+    top: -500%;
+}
+
+.contactTitle h2:nth-child(2) {
+    top: -150%;
+}
+
+/* contactDetails Section */
+
+.contactDetails {
+    margin: 8rem 0;
+}
+
+.contactDetails ul {
+    list-style: none;
+    margin: 5rem 0;
+    padding: 0;
+}
+
+.contactDetails li {
+    margin: 0;
+    padding: 2rem 6rem;
+    float: left;
+    width: 33.33%;
+}
+
+.contactDetails li:nth-child(1) {
+    border-right: 0.1rem solid grey;
+}    
+ 
+
+.contactDetails li:nth-child(3) {
+    border-left: 0.1rem solid grey;
+}
+
+.contactDetails li i {
+    font-size: 4rem;
+}
+
+.contactDetails p {
+    margin-top: 0.8rem;
+    color: #999;
+}
+
+.contactDetails ul p{
+    color: #666;
+}
+
+.contactDetails li p:nth-child(2) {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+/* getInTouch section */
+
+.getInTouch {
+    clear:both;
+}
+
+.getInTouch p:nth-child(2) {
+    color: #999;
+    margin-bottom: 10rem;
+}
+
+/* image section */
+
+.image img {
+    display: block;
 }
