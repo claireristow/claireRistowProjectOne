@@ -184,7 +184,7 @@ footer {
 }
 
 .topFooter {
-    padding: 3rem 0;
+    padding: 9rem 0;
 }
 
 .topFooter h5 {
@@ -502,11 +502,19 @@ footer p {
 .contactContainer {
     background: #c3dab7;
     text-align: center;
-    /* height: 60rem; */
+    position: relative;
 }
 
-.contactContainer h4 {
-    padding: 15rem 0 2rem 0;
+.contact .left, .contact .imageContainer {
+    float: right;
+    width: 50%;
+    overflow: auto;
+}
+
+.contactContainer .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .contactContainer p {
@@ -530,12 +538,6 @@ footer p {
 
 .contactContainer button:hover {
     border: 1px solid #000;
-}
-
-.contact .left, .contact .imageContainer {
-    float: left;
-    width: 50%;
-    overflow: auto;
 }
 
 .imageContainer img {
