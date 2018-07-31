@@ -22,7 +22,7 @@ img {
 }
 
 .wrapper {
-    width: 1170px;
+    width: 117rem;
     margin: 0 auto;
     padding-top: 2rem;
     position: relative;
@@ -51,7 +51,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.1rem solid #999;
 }
 
 h4 {
@@ -122,11 +122,18 @@ nav li:hover {
     border-radius: 50%;
 }
 
+/* index.html line styling */
+
+.line {
+    position: absolute;
+    border-left: 0.1rem solid #666;
+}
+
 /* blog.html and contact.html form */
 
 input {
     border: none;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.1rem solid #999;
     padding-bottom: 0.5rem;
     margin-bottom: 3rem;
     font-size: 1.4rem;
@@ -156,22 +163,22 @@ input[type="submit"] {
     text-transform: uppercase;
     margin: 3rem 0 10rem 0;
     padding: 1rem;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #000;
+    border-top: 0.1rem solid #fff;
+    border-right: 0.1rem solid #fff;
+    border-left: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid #000;
     color: #000;
 }
 
 input[type='submit']:hover {
-    border: 1px solid #000;
+    border: 0.1rem solid #000;
 }
 
-input:hover {
-    border-bottom: 1px solid #000;
+input:focus {
+    border-bottom: 0.1rem solid #000;
 }
 
-input:hover::placeholder {
+input:focus::placeholder {
     color: #000;
     opacity: 1;
 }
@@ -181,6 +188,11 @@ footer {
     clear: both;
     background: #333333;
     color: rgba(255,255,255,0.8);
+}
+
+footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
 .topFooter {
@@ -240,25 +252,25 @@ footer {
     background: #fff;
     color: #333;
     padding: 1rem 2rem;
-    border: none;
+    border: 0.1rem solid #fff;
     margin: 0;
 }
 
 .subscribeNow button {
     float: left;
     background: #c3dab7;
-    padding: 0.89rem 1.5rem;
+    padding: 0.95rem 1.5rem;
     border: none;
     margin: 0;
+    font-size: 1.6rem;
 }
 
-footer p {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+.subscribeNow button:hover {
+    background: #999;
 }
 
 .bottomFooter {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 0.1rem solid rgba(255,255,255,0.1);
     clear:both;
     text-align: center;
     text-transform: uppercase;
@@ -273,7 +285,7 @@ footer p {
 
 .homeHero {
     background: url(../assets/home-1.jpeg);
-    min-height: 102rem;
+    min-height: 80rem;
     background-size: cover;
     background-position: center;
 }
@@ -283,6 +295,12 @@ footer p {
 .branding {
     background-color: #c3dab7;
     padding: 10rem 0 20rem;
+}
+
+.line1 {
+    height: 10rem;
+    top: 105%;
+    left: 50%;
 }
 
 .branding img:first-child {
@@ -336,6 +354,7 @@ footer p {
     width: 70%;
     margin: 0 auto;
     padding: 5rem 0;
+    position: relative;
 }
 
 .spotlightImage {
@@ -384,14 +403,14 @@ footer p {
 .productFeatures {
     background: url(../assets/home-4.jpeg);
     background-size: cover;
-    height: 50rem;
+    height: 58rem;
 }
 
 .productFeatures ul {
     float: right;
     width: 50%;
     list-style-type: none;
-    margin-right: 10rem;
+    margin: 5rem 10rem 2rem 0;
     padding-top: 2rem;
 }
 
@@ -415,7 +434,7 @@ footer p {
 
 .productFeatures h5::before {
     font-family: "Font Awesome 5 Free";
-    border: 0.2rem solid black;
+    border: 0.2rem solid #000;
     padding: 1rem;
     border-radius: 50%;
     font-weight: 900;
@@ -451,7 +470,14 @@ footer p {
 /* index.html team section */
 
 .team {
-    padding-bottom: 10rem;
+    padding: 5rem 0 15rem 0;
+    position: relative;
+}
+
+.line2 {
+    height: 5rem;
+    top: 0;
+    left: 50%;
 }
 
 .team h4 {
@@ -531,13 +557,13 @@ footer p {
     font-weight: 700;
     text-transform: uppercase;
     background: #ffffff;
-    border: none;
+    border: 0.2rem solid #fff;
     padding: 1.8rem 2rem;
     margin-top: 5rem;
 }
 
 .contactContainer button:hover {
-    border: 1px solid #000;
+    border: 0.2rem solid #000;
 }
 
 .imageContainer img {
@@ -556,6 +582,8 @@ footer p {
 main {
     font-size: 1.4rem;
 }
+
+/* blog.html How To section */
 
 .postTitle {
     margin: 10rem 0 8rem 0;
@@ -604,7 +632,7 @@ main {
 
 .postContent {
     clear: both;
-    border-top: 1px solid #999;
+    border-top: 0.1rem solid #999;
     padding: 5rem 0 2rem 0;
 }
 
@@ -693,10 +721,6 @@ main {
     color: #999;
     padding-bottom: 0.5rem;
 }
-
-/* blog.html comment section */
-
-
 
 /* Start of contact.html styles */
 
